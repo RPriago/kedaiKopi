@@ -17,6 +17,7 @@ class Product(models.Model):
     price = models.FloatField()
     is_sold = models.BooleanField(default=False)
     image = models.ImageField(upload_to='product_images', blank=False, null=False)
+    date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
