@@ -16,6 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+USE_THOUSAND_SEPARATOR = True
 
 # Application definition
 
@@ -74,8 +75,12 @@ WSGI_APPLICATION = 'kedaiKopi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'kedaiKopi',
+        'USER': 'postgres',
+        'PASSWORD': '@Shay#1874',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -114,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static_src/'
+STATIC_URL = 'static/'
 MEDIA_URL = 'kedaiKopi/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
