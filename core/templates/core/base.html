@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+=======
+{% load static tailwind_tags %}
+{% load static %}
+>>>>>>> 9197bccd988e4f17a21ca77edeaec7ff2a933e32
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -49,5 +55,17 @@
         </div>
     </footer>
 
+=======
+    <title>{% block tittle %}{% endblock %}</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="{% static 'Logo.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    {% tailwind_css %}
+</head>
+<body>
+    {% include 'core/navbar.html' %}
+    {% block content %}
+    {% endblock %}
+>>>>>>> 9197bccd988e4f17a21ca77edeaec7ff2a933e32
 </body>
 </html>

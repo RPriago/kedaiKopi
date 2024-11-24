@@ -6,7 +6,11 @@ import sys
 
 def main():
     """Run administrative tasks."""
+<<<<<<< HEAD
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kedaikopi.settings')
+=======
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kedaiKopi.settings')
+>>>>>>> 9197bccd988e4f17a21ca77edeaec7ff2a933e32
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
